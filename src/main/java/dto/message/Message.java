@@ -16,7 +16,7 @@ import java.util.UUID;
 public class Message {
 
     private UUID messageID;
-    private String from;
+    private String messageFrom;
     private String messageContent; //main message content
     private Date messageDate;
 }
