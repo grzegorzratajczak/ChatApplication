@@ -17,6 +17,9 @@ public class MainServer {
         PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
         BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
-
+        String inputLine;
+        while ((inputLine = in.readLine()) != null) {
+            out.println(inputLine);
+        }
     }
 }

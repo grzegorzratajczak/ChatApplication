@@ -19,15 +19,15 @@ public class MainClient extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        //login window Start
-//        FXMLLoader loaderLogin = new FXMLLoader(getClass().getResource("/client/LoginGuiMain.fxml"));
-//        Parent rootLogin = loaderLogin.load();
-//        Scene sceneLogin = new Scene(rootLogin, 235, 218);
-//        Stage stageLogin = new Stage();
-//        stageLogin.setTitle("Login");
-//        stageLogin.setScene(sceneLogin);
-//        stageLogin.showAndWait();
-        //login window wait for nick and accept
+//        login window Start
+        FXMLLoader loaderLogin = new FXMLLoader(getClass().getResource("/client/LoginGuiMain.fxml"));
+        Parent rootLogin = loaderLogin.load();
+        Scene sceneLogin = new Scene(rootLogin, 235, 218);
+        Stage stageLogin = new Stage();
+        stageLogin.setTitle("Login");
+        stageLogin.setScene(sceneLogin);
+        stageLogin.showAndWait();
+//        login window wait for nick and accept
 
         Socket clientSocket = new Socket("127.0.0.1", 6666);
 
